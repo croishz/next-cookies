@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
 			status: 200,
 		}
 	);
-	response.cookies.set(key_name, "override");
+	// response.cookies.set(key_name, "override");
 
 	console.log("cookie from request(from document)", request.cookies.get(key_name));
 	console.log("cookie", cookies().get(key_name));
