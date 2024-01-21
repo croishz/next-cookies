@@ -35,7 +35,8 @@ export default function Combobox<T extends ComboboxItemType>({
 		<div {...props}>
 			<label htmlFor={id}>{label}</label>
 			<select
-				defaultValue={query.get("selected") || undefined}
+				value={selected}
+				// defaultValue={query.get("selected") || undefined}
 				style={{ color: "#333", padding: "5px 10px", backgroundColor: applied ? "lightgreen" : "white" }}
 				name={name}
 				id={id}
